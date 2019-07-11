@@ -17,21 +17,41 @@ html {
   /* ---- typography ---- */
   
   body {
-    color: #111;
-    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+    color: rgb(46,64,69);
+    font-family: 'Inconsolata', monospace;
     font-size: 16px;
-    line-height: 147%;
+    line-height: 153%;
   }
   
-  h1 {}
+  h1 {
+    line-height: 0.9;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+  }
   
-  h2 {}
+  h2 {
+    font-size: larger;
+    line-height: 0.9;
+  }
   
   h3 {}
   
   p {
     margin: 0;
+    font-size: 14px;
   }
+
+  div {
+    display: block;
+  }
+
+
+
+
   
   
   
@@ -39,52 +59,171 @@ html {
   
   #site-header {
     padding: 30px 0;
+    width: 100%;
     color: white;
-    background: #111;
+    background: rgb(175, 12, 12);
   }
   
   #site-footer {
-    color: white;
-    padding: 60px 0;
-    background: #111;
+    padding: 20px 0;
+    background: rgb(0, 99, 81);
+    /* background: rgb(140,100,106);  */
   }
   
   #site-main {
-    margin-bottom: 60px;
+    width: 100%;
+    background-image: linear-gradient(rgb(175, 12, 12), rgb(255, 208, 0));
+
+    /* background: rgb(246,224,181); */
+    
   }
   
   .container {
-    margin: 0 20px;
+    width: 100%;
+    font-size: 239px;
+    line-height: 0.9;
+
   }
+
+  .title {
+    margin: -28px;
+    padding: 20px;
+    display: block;
+    /* font-weight: normal; */
+    
+    /* color: rgb(46,64,69); */
+    
+  }
+
+  .title-name {
+    text-transform: lowercase;
+    line-height: 153%;
+    margin-bottom: 120px;
+    margin-top: -74px;
+    font-size: 58px;
+    font-family: 'Monoton', cursive;
+    color: rgb(238, 227, 144);
+
+    /* color: rgb(46,64,69); */
+    
+  }
+
+  .title-legend {
+    text-transform: lowercase;
+    line-height: 153%;
+    margin-bottom: 120px;
+    margin-top: -74px;
+    font-size: 38px;
+    font-family: 'Notable', sans-serif;
+    color: rgb(238,169,144);
+  }
+
+  .search {
+    margin: 24px;
+    border-top: 1px;
+    text-align: left;
+    padding: 4px;
+    color: firebrick;
+    
+  }
+  .search-artist {
+    width: 100%;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 3px solid rgb(62,61,84);
+    color:rgb(0, 99, 81);
+    height: 50px;
+    border-right: none;
+    font-size: 37px;
+    font-family: 'Inconsolata', monospace;
+  }
+  .search-song {
+    width: 100%;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 3px solid rgb(62,61,84);
+    color: rgb(0, 99, 81);
+    height: 50px;
+    border-right: none;
+    font-size: 37px;
+    font-family: 'Inconsolata', monospace;
+  }
+
+    /* search bar input animation */
+    input[type=text] {
+      text-align: left;
+      width: 146px;
+      background-color: inherit;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    
+    /* When the input field gets focus, change its width to 100% */
+    input[type=text]:focus {
+      width: 110%;
+    }
   
+    input[type="submit" i] {
+      -webkit-appearance: push-button;
+      user-select: none;
+      white-space: pre;
+      align-items: flex-start;
+      text-align: center;
+      cursor: default;
+      margin: 20px;
+      background-color: transparent;
+      box-sizing: border-box;
+      padding: 1px 7px 2px;
+      border-width: 5px;
+      border-style: solid;
+      border-color:transparent;
+      border-image: initial;
+    }
+  .submit-button {
+    font-family: 'Inconsolata';
+    color:   rgb(62,61,84);
+    font-size: 30px;
+  }
+
+
   .section {
     margin-bottom: 20px;
     padding-top: 20px;
   }
+
   
   @media (min-width: 768px) {
     .container {
-      max-width: 728px;
+      max-width: 783px;
       margin: 0 auto;
     }
   }
   
-  
-  
-  
-  /* ---- components ---- */
-  
-  .button {
+  .cards-container {
     width: 100%;
-    background-color: blue;
-    color: #fff;
-    border: 1px solid #fff
+    margin: auto;
+    font-size: 35px;
+    line-height: 180%;
+    color: whitesmoke;
   }
-  
-  .button-alt {
-    color: blue;
-    background-color: #fff;
+
+  .artist-name {
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 59px;
+    font-style: normal;
+    line-height: 100%;
+    color: darkorange;
   }
-  
-  /* ---- section ---- */
+  .song-name {
+    text-transform: capitalize;
+    margin: auto;
+    font-size: 59px;
+    font-style: oblique;
+    line-height: 100%;
+    color: grey;
+  }
+
   
