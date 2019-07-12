@@ -15,7 +15,8 @@ Navbar.prototype.generate = function() {                //generar dinamicamente 
     this.links.forEach((link) => {
         this.elements += `
             <li>
-                <a href="#0" url=${link.url}>${link.name}</a>      
+                <a href="#0" url=${link.url}>${link.name}</a>  
+  
             </li>
         `;                                              
     });                      //${link.name} -- app.js 
@@ -28,3 +29,4 @@ Navbar.prototype.generate = function() {                //generar dinamicamente 
 Navbar.prototype.render = function() {                  //añadir los elementos a DOM
     this.parentElement.innerHTML = this.elements;
 }
+

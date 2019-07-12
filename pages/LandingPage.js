@@ -5,21 +5,24 @@ function LandingPage(parentElement){
     
     this.elements = null;
 }
-
 //--------- MÉTODOS -----------
 LandingPage.prototype.generate = function() {
     this.elements = `
         <div class="container">
+            <marquee style=font-family:'Inconsolata', monospace; bgcolor="#FF4301" behavior="scroll"> el verbo «can» en inglés  es uno de los verbos modales más importantes pues tiene diversos usos como expresar habilidad y posibilidad --- «can» significa "poder" en el sentido de "tener capacidad" </marquee>
             <div class="title">
-                <div class="title-name"> 
-                    <h1>en<br>Canta 
-                    </h1>
+                <div class="can-title">
+                    <h1 id="white">can</h1>
                 </div>
-                <div class="title-legend">
-                    <h2>where music and language meet
-                    </h2>
-                    </div>
+                <div class="tar-title"> 
+                    <h1>tar</h1>
+                </div>
             </div>
+                <div class="title-legend">
+                    <h2>where music & language meet
+                    </h2>
+                </div>
+            
             <div class="search">
             <form>
                 <input type="text" name="artist" class="search-artist" autofocus="autofocus" placeholder="artist" id="search-input">
@@ -28,8 +31,6 @@ LandingPage.prototype.generate = function() {
                 
                 <input type="submit" class="submit-button"></input>
             </form>
-                <ul class="results" id="results">
-                </ul>
             </div>
     `;
     this.render();

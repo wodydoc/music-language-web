@@ -18,9 +18,9 @@ LyricsPage.prototype.generate = async function() {      //ASYNC FUNCTION **
     await this.connectToAPI();                          //AWAIT EXPRESSION ** 
     this.elements = `
         <div class="container">
-        <header>
-            <section class="artist-name">${this.artist}</section>
+        <header id="header-song">
             <section class="song-name">${this.song}</section>
+            <section class="artist-name">${this.artist}</section>
         </header>
             <section class="cards-container"> 
        <div>

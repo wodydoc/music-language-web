@@ -1,11 +1,51 @@
 'use strict';
 
 function TranslateService() {                //link to API
+    this.baseURL = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190711T125839Z.1877a1020326d7fd.487517ab76fc5ba4cd01112f56d8afa0f4c81026&lang=en-es&text=';
+    this.proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 }
 
-TranslateService.prototype.getSong = function(title){
-    if(title === 'forever'){
-        let result = "Puede que no signifique nada para todos ustedes, pero entiendan que no se hizo nada por mí, así que no pienso detenerme en absoluto. Quiero esta mierda para siempre, mía (siempre mía, siempre mía) Estoy cerrando la mierda en el centro comercial Y Decirle a todas las chicas que ella es la única para mí Y ni siquiera planeo llamar Quiero esta mierda para siempre, mía (siempre mía, siempre mía) Apellido Siempre, nombre más grande Como un esguince de tobillo, muchacho, no soy nada para jugar Comenzó como local, pero gracias a todos los enemigos que conozco, pilotos de G4 en su primer nombre En tu ciudad se desvaneció el marrón, Nino Ella insiste en que tiene más clase, sabemos Nadar en el dinero, ven y encuéntrame, Nemo. Si yo estuviera en el club, sabes que me hice una bola, una quimioterapia, una cinta mixta, esa mierda sonaba como un álbum. ¿Quién pensaría que sería una gira por todo el país? Las etiquetas quieren mi nombre junto a una X como Malcolm Everybody tengo un trato, lo hice sin uno Sí, nigga, me ocupo de mi negocio Matando a todos estos raperos, jurarías que tenía una lista de resultados Todos los que dudaron de mí están pidiendo perdón Si no has sido parte de eso, al menos tienes que ser testigo de Perras. Puede que no signifique nada para todos. Pero entiendo que no se hizo nada por mí, así que no pienso parar en absoluto. Quiero esta mierda para siempre. , mía (siempre mía, siempre mía) Estoy cerrando mierda en el centro comercial Y le digo a cada chica que es la única para mí Y ni siquiera planeo llamar Quiero esta mierda para siempre, mía (siempre mía, siempre mía ) Siempre, siempre, el Sr. West está en la construcción. No hay duda de quién iba a matarlos. Solía ​​tener sueños de capuchas: gran fama, grandes cadenas, metí mi polla en esta vida hasta que esa perra llegó y se puso dura. todos caen como los equipos de pelota Solo para que pueda llover toda la primavera Todos ustedes vieron mi historia, mi gloria, yo había violado el juego como joven, se podría decir que es legal. Cuando un nigga explota, ellos construyen estatuas para mí. dinero, Benjamin Button, qué, nada Nah, chicas súper malas que me dan McLovin 'Pensarías que corrí por el mundo como el marido de Michelle. Pensarías que estas niggas me conocen cuando r eally no le gusta que hayan estado abajo con el viejo yo, no, usted no fue "Uh, usted es un maldito perdedor. Ni siquiera va a clase, Bueller" Cambie las placas de Grammy solo por tener a mi abuela volver 'miembro que tenía esa mala cadera como un fanny pack? Perseguir el estrellato te convertirá en un maníaco Todo el camino en Hollywood y yo ni siquiera puedo actuar. Ellos sacan sus cámaras, y maldita sea, dicen que solía querer esto para siempre, puedes recuperarlo. Puede que no signifique. nada para todos ustedes, pero entiendan que no se hizo nada por mí, así que no pienso detenerme en absoluto. Quiero esta mierda para siempre, mía (siempre mía, siempre mía). Estoy cerrando mierda en el centro comercial. Y le digo a todas las chicas. ella es la única para mí Y ni siquiera planeo llamar. Quiero esta mierda para siempre, mía (siempre mía, siempre mía) Bien, hola, es el marciano, Space Jam Jordans. Quiero esta mierda para siempre, despiértate y huele el Jardín más fresco que la cosecha, acércate al objetivo Si tengo una idea, entonces creo que solo soy Nueva Orleans Y nunca me detendré, como si estuviera huyendo de la policía Salté en mi auto y le dije a mi chofer "A la cima" La vida es una jodida montaña rusa, luego se cae ¿Pero a qué debo gritar? Este es mi parque temático. Mi mente brilla incluso cuando mis pensamientos parecen oscuros. Pistola de mi lado, no quieres escuchar esa cosa. Deja que el rey hable, verifica el precio y presta atención, Lil Wayne, eso es lo que tienen que decir o Menciono que soy como Nevada en medio del verano. Estoy descansando a la vanguardia, necesito una almohada y una funda. Shhh, mi pie está durmiendo sobre el acelerador. No hay pastillas de freno, no hay tal cosa como la última. Uh, uh. no significa nada para todos ustedes, pero entiendan que no se hizo nada por mí, así que no pienso detenerme en absoluto. Quiero esta mierda para siempre, mía (siempre mía, siempre mía). Estoy cerrando la mierda en el centro comercial. todas las chicas, ella es la única para mí. Y ni siquiera planeo llamar. Quiero esta mierda para siempre, mía (siempre mía, siempre mía). Ahí van, empacando estadios mientras Shady escupe su flujo. Vienen, Macadamian, van tan balístico, whoa, puede hacer que se vean como bozos, se está preguntando si debería escupir esto lento. Joder, no, se rompe, su taza acaba de correr, oh, no, no ha tenido un verdadero zumbido. así desde la última vez que tomó una sobredosis. Estuvieron esperando pacientemente a que Pinocho metiera la nariz en el juego de nuevo y saben que el rap nunca será el mismo que el de Bashin en el cerebro de estas azadas y establecer un nombre a medida que avanza La pasión y la llama se encienden, no puedes apagarlas una vez que las encendemos. Esta mierda es exactamente de qué coño estoy hablando cuando nos alborotamos. Trataste con algunos villanos verdaderos que están dentro. De la cabina, la verdad derramándose. Escupir los sentimientos verdaderos hasta que nuestros rellenos dentales salgan volando de nuestras bocas, ahora rebobinándolas. Devolución, hijo de puta, por la forma en que me atacaste, cómo está el sabor, cuando golpeo el sabor de ¿Tus bocas con el bajo tan fuerte que sacude el lugar? Soy Hannibal Lector, así que, en caso de que estés pensando en salvar la cara, no vas a tener ninguna cara que salvar."
-    }
-    return result;
+TranslateService.prototype.getSong = async function(text){
+    var response = await fetch(this.proxyUrl+this.baseURL+text);
+    console.log(response)
+    var data = await response.json();
+    console.log(data)
+    return data.text[0];
 }
+
+document.addEventListener('mouseup', async function() {
+    var test = window.getSelection().extentNode.data;
+    console.log(test);
+    if(window.getSelection().extentNode.data) {
+        var translation = await instance.getSong(window.getSelection().extentNode.data)
+        showText(translation);
+        // alert(transaltion);
+    }
+})
+
+// TRANSLATION ANIMATED ALERT DESIGN
+function showText(translation) {
+    var headerSong = document.querySelector('#header-song');
+    var newTranslation = document.createElement('p');
+    newTranslation.classList.add('alert');
+    newTranslation.appendChild(document.createTextNode(translation));
+    headerSong.appendChild(newTranslation);
+}
+
+
+
+
+    
+
+
+
+
+
+
+var instance = new TranslateService();
+
+
+
+//-----------------------
+
+   
