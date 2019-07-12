@@ -22,14 +22,15 @@ LandingPage.prototype.generate = function() {
                     <h2>where music & language meet
                     </h2>
                 </div>
-            
+
+                
             <div class="search">
             <form>
                 <input type="text" name="artist" class="search-artist" autofocus="autofocus" placeholder="artist" id="search-input">
 
                 <input type="text" name="song" class="search-song" autofocus="autofocus" placeholder="song" id="search-input">
                 
-                <input type="submit" class="submit-button"></input>
+                <input type="submit" class="submit-button" value="y ya no tararees"></input>
             </form>
             </div>
     `;
