@@ -1,11 +1,11 @@
 'use strict';
+//---------------------------------------------------ES5
+
 //-------- PROPIEDADES --------
-    //
 function Navbar(parentElement, links, style) {                 //funcion constructura - va a recibir parent, links, style 
     this.parentElement = parentElement;
     this.links = links; 
     this.style = style;
-    //Navbar.prototype.render
     this.elements = null;
 }
 //--------- MÉTODOS -----------
@@ -19,7 +19,7 @@ Navbar.prototype.generate = function() {                //generar dinamicamente 
   
             </li>
         `;                                              
-    });                      //${link.name} -- app.js 
+    });                      
     this.elements += `</ul>
                     </nav>
     `;
@@ -30,3 +30,18 @@ Navbar.prototype.render = function() {                  //añadir los elementos 
     this.parentElement.innerHTML = this.elements;
 }
 
+//---------------------------------------------------ES6
+class Navbar{
+    constructor(parentElement, links, style){
+        this.parentElement = parentElement;
+        this.links = links; 
+        this.style = style;
+        this.elements = null;
+    }
+    generate(){
+        this.elements
+    }
+    render(){
+
+    }
+}
